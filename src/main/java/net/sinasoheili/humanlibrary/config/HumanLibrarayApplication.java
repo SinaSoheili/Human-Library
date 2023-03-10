@@ -1,4 +1,4 @@
-package net.sinasoheili.humanlibrary;
+package net.sinasoheili.humanlibrary.config;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
