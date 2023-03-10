@@ -9,6 +9,13 @@ import java.time.LocalDateTime;
 @Entity
 public class Book {
 
+    public static final String PROP_ID = "id";
+    public static final String PROP_TITLE = "title";
+    public static final String PROP_DESCRIPTION = "description";
+    public static final String PROP_PUBLISH_DATE = "publishDate";
+    public static final String PROP_STATUS = "status";
+    public static final String PROP_USER = "user";
+
     @Id
     private String id;
 
@@ -21,4 +28,8 @@ public class Book {
 
     @Enumerated(EnumType.STRING)
     private BookStatus status;
+
+    @ManyToOne
+    @JoinColumn(nullable = false)
+    private User user;
 }
